@@ -1,0 +1,55 @@
+body{
+   background-color: rgb(82, 253, 60);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+}
+.form {
+   background-color: #fff;
+   width: 65vw;
+   box-shadow: 0 15px 35px rgba(0,0,0,.02);
+   padding: 2em;
+   border-radius: 5px;
+}
+.form-group {
+   margin-bottom: 1em;
+   transition: all .3s;
+}
+
+.form-label {
+   font-size: 1em;
+   color: #aaa;
+   display: block;
+   opacity: 1;
+   transform: translateY(-1.25em);
+   transform-origin:0 0;
+   transition: all .3s;
+}
+
+.form-control {
+   box-shadow: none;
+   background-color: rgba(0,0,0,.02);
+   border-radius: 0px;
+   border-color: #ccc;
+   border-style: none none solid none;
+   width: 50%;
+   transition: all .5s;
+   padding: 5px;
+}
+.form-control::placeholder {
+   color: transparent;
+}
+.form-control:focus {
+   box-shadow: none;
+   outline: none;
+   border-color: orange;
+}
+.form-control:focus + .form-label, 
+.form-control:not(:placeholder-shown) + .form-label 
+{
+   transform: translateY(-2.5em) scale(.8);
+}
+.form-group:focus-within {
+   transform: scale(1.05,1.05);
+}
