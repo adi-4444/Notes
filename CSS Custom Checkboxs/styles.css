@@ -39,14 +39,39 @@ body {
    background-color: #fff;
 }
 
-
-[type = "checkbox"] + label::before {
+[type = "checkbox"]:checked + label::before {
    content: "";
    position: absolute;
    left: 0;
    top: 0;
    width: 18px;
    height: 18px;
-   outline: 2px solid #5fd25f;
+   outline: 2px solid #5fd02f;
    background-color: #fff;
+}
+
+[type = "checkbox"]:checked + label::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 18px;
+   height: 18px;
+   background-image: url(check.png);
+   background-size: contain;
+   transform: scale(1);
+   transition: all .3s ease;
+}
+
+[type = "checkbox"]:not(:checked) + label::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 18px;
+   height: 18px;
+   background-image: url(check.png);
+   background-size: contain;
+   transform: scale(0);
+   opacity: 0;
 }
