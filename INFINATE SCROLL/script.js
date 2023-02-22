@@ -76,3 +76,14 @@ window.addEventListener('scroll', () => {
    }
 });
 showPosts()
+
+
+// Check if user has scrolled to the bottom of the screen
+const isBottomOfScreen = () => {
+   return window.innerHeight + window.scrollY >= document.body.offsetHeight;
+}
+
+// Check if user has scrolled to the bottom of the container element
+const isBottomOfContainer = (container) => {
+   return container.scrollHeight + container.clientHeight >= container.scrollTop;
+}
