@@ -1,0 +1,37 @@
+body {
+	background: transparent; /* Make it white if you need */
+	color: #fcbe24;
+	padding: 0 24px;
+	margin: 0;
+	height: 100vh;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+	width: 25rem;
+	color: black;
+	border: 1px solid red;
+	padding: 1rem 1rem 5rem 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.post {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin: 15px 5px;
+	padding: 1rem;
+	border: 1px solid gray;
+}
+.loading {
+	display: none;
+}
+.show {
+	color: red;
+	display: block;
+}
